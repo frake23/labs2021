@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="vendors/alpine.js"></script>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="vendors/bootstrap.min.css">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="shop-header mb-5">
+        <div class="container">
+            <span class="logo">
+                Магазин
+            </span>
+        </div>
+
+    </header>
+    <div x-data="state()" class="container">
+        <div x-data="{open: false}" class="mb-5">
+            <button class="btn btn-dark" x-on:click="open=!open">Новые товары</button>
+            <div x-show="open" class="mt-2" x-transition>
+                <div class="row title">
+                    <div class="col-3">Название</div>
+                    <div class="col-3">Цена</div>
+                </div>
+                <form class="form-group row" x-on:submit="addGood" id="goodsForm">
+                    <div class="col-3">
+                    <input name="name"
+                        type="text" class="form-control" placeholder="Введите название">
+                    </div>
+                    <div class="col-3">
+                        <input name="price" 
+                            type="text" class="form-control" placeholder="Введите цену">
+                    </div>
+                    <div class="col-2">
+                        <button class="btn btn-outline-dark" type="submit">Добавить</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="row d-flex justify-content-between">
+            <div class="col-5" x-show="goods.length !== 0" x-transition>
+                <h4>Товары</h4>
+                <table class="table">
+                    <thead>
+                        <th scope="col">ID</th>
+                        <th scope="col">Название</th>
+                        <th scope="col">Цена</th>
+                        <th scope="col"></th>
+                    </thead>
+                    <tbody>
+                        <template x-for="(good, i) in goods" :key="good.id">
+                            <tr>
+                                <th scope="row" x-text="good.id"></th>
+                                <td x-text="good.name"></td>
+                                <td x-text="good.price" class="cell"></td>
+                                <td>
+                                    <button x-on:click="removeGood(i)">
+                                        <img src="icons/x.svg" alt="x" width="24" height="24">
+                                    </button>
+                                    <button x-on:click="addOrder(good)">
+                                        <img src="icons/plus.svg" alt="plust" width="24" height="24">
+                                    </button>
+                                </td>
+                            </tr>
+                        </template>
+                    </tbody>
+                </table>
+            </div>
+            
+            <div class="col-5" x-show="orders.length !== 0" x-transition>
+                <h4>Заказы</h4>
+                <table class="table">
+                    <thead>
+                        <th scope="col">#</th>
+                        <th scope="col">Название</th>
+                        <th scope="col">Цена</th>
+                        <th scope="col">Количество</th>
+                    </thead>
+                    <tbody>
+                        <template x-for="(order, i) in orders" :key="order.good.id">
+                            <tr>
+                                <th scope="row" x-text="i+1"></th>
+                                <td x-text="order.good.name"></td>
+                                <td x-text="order.good.price" class="cell"></td>
+                                <td x-text="order.count"></td>
+                                <td>
+                                    <button x-on:click="removeOrder(order, i)">
+                                        <img src="icons/dash.svg" alt="x" width="24" height="24">
+                                    </button>
+                                </td>
+                            </tr>
+                        </template>
+                    </tbody>
+                </table>
+                <div class="title">Общая стоимость: <span x-text="ordersPrice"></span></div>
+            </div>
+            
+        </div>
+    </div>
+    
+</body>
+</html>

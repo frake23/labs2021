@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторная работа 2.1</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        span[class] {
+            font-size: 24px
+        }
+        p {
+            font-size: 18px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 32px auto;
+            padding: 0 16px;
+        }
+        .table {
+            display: table;
+            width: 500px;
+            border: 1px solid black;
+        }
+        .table div {
+            display: table-row;
+            position: relative;
+            border: 1px solid black;
+            text-align: center;
+        }
+        .table div div {
+            display: table-cell;
+            padding: 4px
+        }
+        .th div {
+            font-weight: bold;
+        }
+        .table div div[rowspan] {
+            border-right: 0;
+        }
+        .table div div[close-rowspan] {
+            border-left: 0;
+        }
+        .table div div[rowspan] * {
+            position: relative;
+            left: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Задание 1</h1>
+        <p>
+            Кстати, многие <span class="text-italic">известные</span> личности набирают популярность среди
+            <span class="text-bold">определенных</span> слоев населения,
+            а значит, должны быть смешаны с <span class="text-strike">не</span> уникальными данными до степени
+            <span class="text-bold">совершенной</span> неузнаваемости,
+            из-за чего возрастает их статус <span class="text-mark">бесполезности</span>!
+        </p>
+        <p>
+            Сторонники <span class="text-bold">тоталитаризма</span> в науке освещают чрезвычайно интересные особенности
+            картины
+            <span class="text-italic">в целом</span>, однако конкретные выводы, разумеется, представлены в исключительно
+            <span class="text-mark text-bold">положительном</span> свете.
+        </p>
+        <p>
+            Имеется <span class="text-bold">спорная</span> точка зрения, гласящая примерно
+            <span class="text-bold">следующее</span>: стремящиеся вытеснить <span
+                class="text-italic">традиционное</span>
+            производство, <span class="text-mark">нанотехнологии</span> формируют <span
+                class="text-italic">глобальную</span>
+            экономическую сеть и при этом - <span class="text-strike">функционально</span>
+            разнесены на независимые элементы.
+        </p>
+        <p>
+            В рамках спецификации современных стандартов, явные признаки <span class="text-bold">победы</span>
+            институционализации и по сей
+            день остаются уделом <span class="text-italic">либералов</span>, которые жаждут быть призваны к ответу.
+        </p>
+        <p>
+            Равным образом, начало повседневной работы по <span class="text-italic">формированию позиции</span> играет
+            <span class="text-bold">определяющее</span> значение
+            для <span class="text-mark text-strike">новых</span> предложений.
+        </p>
+        <p>
+            Сложно сказать, почему <span class="text-italic">ключевые</span> особенности структуры проекта неоднозначны
+            и будут <span class="text-bold">функционально</span>
+            разнесены на <span class="text-italic text-bold">независимые</span> элементы.
+        </p>
+        <p>
+            Есть над чем задуматься: <span class="text-italic">диаграммы связей</span> будут представлены в
+            исключительно <span class="text-mark">положительном</span> свете.
+        </p>
+        <p>
+            <em>Безусловно</em>, выбранный нами инновационный путь предопределяет высокую востребованность
+            <strong>новых</strong> предложений.
+        </p>
+        <p>
+            А также <span class="text-italic text-red">ключевые</span> особенности структуры проекта
+            <span class="text-bold">своевременно</span> верифицированы.
+        </p>
+        <p>
+            Не следует, однако, забывать, что <span class="text-bold">повышение</span> уровня гражданского сознания
+            представляет собой <span class="text-mark">интересный</span>
+            эксперимент проверки <span class="text-italic">первоочередных</span> требований.
+        </p>
+    </div>
+
+    <!----------------------------------------------------------------------------------------------------------------->
+
+    <div class="container">
+        <h1>Задание 2</h1>
+        <div style="width: 500px;">
+            <h2 style="text-align: center;">Понедельник</h2>
+            <div class="table">
+                <div class="th">
+                    <div>Время</div>
+                    <div style="width: 50%;">ЧС</div>
+                    <div style="width: 50%;">ЗН</div>
+                </div>
+                <div>
+                    <div>8:30-10:05</div>
+                    <div>(лек) Правоведение 218л</div>
+                    <div>(лек) Теория вероятностей и математическая статистика</div>
+                </div>
+                <div>
+                    <div>10:15-11:50</div>
+                    <div rowspan><span>(лек) Теория вероятностей и математическая статистика 218л Горяинов В. Б.</span>
+                    </div>
+                    <div close-rowspan></div>
+                </div>
+                <div>
+                    <div>12:00-13:35</div>
+                    <div rowspan><span>(сем) Иностранный язык Каф</span></div>
+                    <div close-rowspan></div>
+                </div>
+                <div>
+                    <div>13:50-15:25</div>
+                    <div>(лек) Правоведение 218л</div>
+                    <div></div>
+                </div>
+                <div>
+                    <div>15:40-17:15</div>
+                    <div rowspan><span>(сем) Элективный курс по физической культуре и спорту</span></div>
+                    <div close-rowspan></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

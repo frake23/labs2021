@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICS6 Bootstrap</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+
+    <style>
+        html {
+            position: relative;
+            min-height: 100%;
+        }
+
+        body {
+            margin-bottom: 40px;
+        }
+
+        main {
+            margin-top: 15px;
+        }
+
+        footer {
+            height: 40px;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .my-primary {
+            background-color: #ff6ba1;
+            color: white;
+        }
+        table, td, tr, th {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark my-primary">
+            <div class="container">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                </ul>
+            </div>
+            
+        </nav>
+    </header>
+    <main class="container">
+        <div class="row mb-4">
+            <div class="col-4">
+                <img src="./dwayne-rock.gif" alt="avatar" height="100%">
+            </div>
+            <div class="col-8">
+                <p>
+                    Кстати, многие <span class="text-italic">известные</span> личности набирают популярность среди
+                    <span class="text-bold">определенных</span> слоев населения,
+                    а значит, должны быть смешаны с <span class="text-strike">не</span> уникальными данными до степени
+                    <span class="text-bold">совершенной</span> неузнаваемости,
+                    из-за чего возрастает их статус <span class="text-mark">бесполезности</span>!
+                </p>
+                <p>
+                    Сторонники <span class="text-bold">тоталитаризма</span> в науке освещают чрезвычайно интересные особенности
+                    картины
+                    <span class="text-italic">в целом</span>, однако конкретные выводы, разумеется, представлены в исключительно
+                    <span class="text-mark text-bold">положительном</span> свете.
+                </p>
+                <p>
+                    Имеется <span class="text-bold">спорная</span> точка зрения, гласящая примерно
+                    <span class="text-bold">следующее</span>: стремящиеся вытеснить <span
+                        class="text-italic">традиционное</span>
+                    производство, <span class="text-mark">нанотехнологии</span> формируют <span
+                        class="text-italic">глобальную</span>
+                    экономическую сеть и при этом - <span class="text-strike">функционально</span>
+                    разнесены на независимые элементы.
+                </p>
+            </div>
+        </div>
+
+        <div class="row mb-4">
+            <div class="col-4">
+                <form>
+                    <div class="form-group mb-2">
+                      <label for="email" class="input-text text-bold">Email</label>
+                      <input type="text" class="form-control" name="email" id="email"  placeholder="Почта">
+                    </div>
+                    <div class="form-group">
+                        <label for="pass" class="input-text text-bold">Password</label>
+                        <input type="text" class="form-control" name="password" id="pass" placeholder="Пароль">
+                    </div>
+                    <div class="input-group mb-2">
+                        <span class="input-group-addon">
+                            <span>М</span>
+                            <input type="radio" name="sex" value="male" checked>
+                            <span>Ж</span>
+                            <input type="radio" name="sex" value="female">
+                        </span>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Регистрация</button>
+                </form>
+            </div>
+            <div class="col-4">
+                <table class="table table-bordered table-hover">
+                    <caption>Расписание в понедельник</caption>
+                    <thead>
+                        <tr class="table-primary">
+                            <th scope="col">Время</th>
+                            <th style="width: 50%;" scope="col">ЧС</th>
+                            <th style="width: 50%;" scope="col">ЗН</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>8:30-10:05</td>
+                            <td>(лек) Правоведение 218л</td>
+                            <td>(лек) Теория вероятностей и математическая статистика</td>
+                        </tr>
+                        <tr>
+                            <td>10:15-11:50</td>
+                            <td colspan="2">(лек) Теория вероятностей и математическая статистика 218л Горяинов В. Б.</td>
+                        </tr>
+                        <tr>
+                            <td>12:00-13:35</td>
+                            <td colspan="2">(сем) Иностранный язык Каф</td>
+                        </tr>
+                        <tr>
+                            <td>13:50-15:25</td>
+                            <td>(лек) Правоведение 218л</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>15:40-17:15</td>
+                            <td colspan="2">(сем) Элективный курс по физической культуре и спорту</td>
+                        </tr>  
+                    </tbody>
+                    
+                </table>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <p>
+                    Сложно сказать, почему <span class="text-italic">ключевые</span> особенности структуры проекта неоднозначны
+                    и будут <span class="text-bold">функционально</span>
+                    разнесены на <span class="text-italic text-bold">независимые</span> элементы.
+                </p>
+                <p>
+                    Есть над чем задуматься: <span class="text-italic">диаграммы связей</span> будут представлены в
+                    исключительно <span class="text-mark">положительном</span> свете.
+                </p>
+                <p>
+                    <em>Безусловно</em>, выбранный нами инновационный путь предопределяет высокую востребованность
+                    <strong>новых</strong> предложений.
+                </p>
+                <p>
+                    А также <span class="text-italic text-red">ключевые</span> особенности структуры проекта
+                    <span class="text-bold">своевременно</span> верифицированы.
+                </p>
+                <p>
+                    Не следует, однако, забывать, что <span class="text-bold">повышение</span> уровня гражданского сознания
+                    представляет собой <span class="text-mark">интересный</span>
+                    эксперимент проверки <span class="text-italic">первоочередных</span> требований.
+                </p>
+            </div>
+        </div>
+    </main>
+    <footer class="my-primary">
+        <div class="container">
+            <p class="footer-text">Footer</p>
+        </div>
+    </footer>
+</body>
+
+</html>

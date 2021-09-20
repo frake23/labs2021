@@ -1,0 +1,21 @@
+body {
+    margin: 0
+}
+
+.text-bold {
+    font-weight: bold;
+}
+.text-italic {
+    font-style: italic;
+}
+.text-strike {
+    text-decoration: line-through;
+}
+.text-red {
+    color: red;
+}
+.text-mark {
+    background-color: yellow;
+    color: red;
+    padding: 0 4px;
+}

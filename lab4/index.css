@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+    font-family: Roboto;
+}
+
+button {
+    border: 0;
+    padding: 0;
+    background: transparent;
+    cursor: pointer;
+}
+
+
+.shop-header {
+    background-color: #525252;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+    font-size: 22px
+}
+
+.title {
+    font-size: 18px;
+}
+
+.cell:hover {
+    background-color: #c4c4c4;
+}
