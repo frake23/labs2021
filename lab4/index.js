@@ -10,7 +10,7 @@ function state() {
             if (!intPrice || !name) {
                 alert('Проверьте введенные данные');
                 return;
-            };
+            }
             this.goods.push(new Good(data.get('name'), intPrice));
             document.forms.goodsForm.reset();
         },
