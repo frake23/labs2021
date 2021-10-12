@@ -15,7 +15,11 @@ class TestFunction < MiniTest::Unit::TestCase
     ]
   end
 
-  def test1
-    @true_values.each { |dot| assert_in_delta dot[:y], func_x_z(dot[:x], dot[:z]), 0.01 }
+  def test_values
+    true_values.each { |dot| assert_in_delta dot[:y], func_x_z(dot[:x], dot[:z]), 0.01 }
   end
+
+  private
+
+  attr_reader :true_values
 end

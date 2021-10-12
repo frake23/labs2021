@@ -1,17 +1,15 @@
 # frozen_string_literal: true
 
-def find_roots(a, b, f = nil, eps = 0.1, &block)
-  a = a.to_f
-  b = b.to_f
-  fun = f || block
-  return nil unless fun
+def find_roots(left, right, func = nil, eps = 0.1, &block)
+  left = left.to_f
+  right = right.to_f
+  return nil unless (fun = func || block)
 
   x = 0
   loop do
     prev = x
-    x = a + (b - a) / 2
-    y = fun.call(x)
-    y.positive? ? b = x : a = x
+    x = left + (right - left) / 2
+    (y = fun.call(x)).positive? ? right = x : left = x
     break x if y.abs <= eps && (x - prev).abs <= eps
   end
 end

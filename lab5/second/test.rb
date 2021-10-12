@@ -5,6 +5,8 @@ require './main'
 
 # Application's functions testing
 class TestAnalyzer < MiniTest::Unit::TestCase
+  # rubocop:disable Metrics/AbcSize
+  # rubocop:disable Metrics/MethodLength
   def setup
     @res = []
     rand(1..10).downto 1 do # Количество предложений
@@ -21,12 +23,18 @@ class TestAnalyzer < MiniTest::Unit::TestCase
         end
         s += ' '
       end
-      @res << { str: s, data: h, count: count }
+      res << { str: s, data: h, count: count }
     end
-    @res.sort_by! { |i| -i[:count] }.map { |i| i.tap { |item| item.delete(:count) } }
+    res.sort_by! { |i| -i[:count] }.map { |i| i.tap { |item| item.delete(:count) } }
+  end
+  # rubocop:enable Metrics/AbcSize
+  # rubocop:enable Metrics/MethodLength
+
+  def test_generated
+    assert_equal res, strings_sorter(res.length) { |i| res[i][:str] }
   end
 
-  def test_1
-    assert_equal @res, strings_sorter(@res.length) { |i| @res[i][:str] }
-  end
+  private
+
+  attr :res
 end
