@@ -1,0 +1,15 @@
+detectors:
+  UncommunicativeVariableName:
+    enabled: false
+  DuplicateMethodCall:
+    enabled: false
+  TooManyStatements:
+    enabled: false
+  UtilityFunction:
+    enabled: false
+  FeatureEnvy:
+    enabled: false
+  ControlParameter:
+    enabled: false
+  LongParameterList:
+    max_params: 4
