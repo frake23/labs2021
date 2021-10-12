@@ -5,12 +5,12 @@ def find_roots(left, right, func = nil, eps = 0.1, &block)
   right = right.to_f
   return nil unless (fun = func || block)
 
-  x = 0
-  loop do
-    prev = x
-    x = left + (right - left) / 2
-    (y = fun.call(x)).positive? ? right = x : left = x
-    break x if y.abs <= eps && (x - prev).abs <= eps
+  x_var = left
+  y_of_a = fun.call left
+  while x_var <= right
+    x_var += eps
+    y_var = fun.call x_var
+    y_var * y_of_a <= 0 ? (return x_var - eps / 2) : nil
   end
 end
 
