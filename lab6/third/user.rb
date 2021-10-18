@@ -2,7 +2,6 @@
 
 require './main'
 
-puts 'Введите a, b'
 puts "Корень на [-1, 1] для f1\nКак блок #{find_roots(-0.2, 1) do |x|
   FUNC1.call(x)
 end }\nКак лямбда #{find_roots(-0.2, 1, FUNC1)}"
