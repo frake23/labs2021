@@ -10,10 +10,8 @@ class TestAnalyzer < MiniTest::Unit::TestCase
   def setup
     @res = []
     rand(1..10).downto 1 do # Количество предложений
-      s = ''
-      h = {}
-      count = 1
-      rand(1..10).downto 1 do # Количество слов
+      words = (1..rand(1..10)).reduce(['', Hash.new(0), 1]) do |a| # Количество слов
+        s, h, count = a
         letters = rand(1..10)
         count += letters
         letters.downto 1 do # Количество букв
@@ -21,9 +19,9 @@ class TestAnalyzer < MiniTest::Unit::TestCase
           h[l] = h[l] ? h[l] + 1 : 1
           s += l
         end
-        s += ' '
+        ["#{s} ", h, count]
       end
-      res << { str: s, data: h, count: count }
+      res << { str: words[0], data: words[1], count: words[2] }
     end
     res.sort_by! { |i| -i[:count] }.map { |i| i.tap { |item| item.delete(:count) } }
   end

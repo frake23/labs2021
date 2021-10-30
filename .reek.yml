@@ -13,3 +13,5 @@ detectors:
     enabled: false
   LongParameterList:
     max_params: 4
+  InstanceVariableAssumption:
+    enabled: false

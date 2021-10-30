@@ -1,17 +1,15 @@
 # frozen_string_literal: true
 
 def string_analyze(str)
-  count = 0
-  alphabet = {}
-  str.split('').each { |c| (alphabet[c] = (alphabet[c] ? alphabet[c] + 1 : 1)) and count += 1 unless c == ' ' }
-  [count, alphabet]
+  str
+    .split('')
+    .reject { |s| s == ' ' }
+    .each_with_object(Hash.new(0)) { |c, a| a[c] += 1 }
+    .then { |this| [this.values.sum, this] }
 end
 
 def strings_sorter(count)
-  arr = []
-  0.upto count - 1 do |i|
-    s = yield i
-    arr << [*string_analyze(s), s]
-  end
-  arr.sort_by { |i| -i[0] }.map { |i| { str: i[2], data: i[1] } }
+  (0..count - 1)
+    .each_with_object([]) { |i, a| a << [*string_analyze((s = yield i)), s] }
+    .sort_by { |i| -i[0] }.map { |i| { str: i[2], data: i[1] } }
 end
