@@ -2,26 +2,43 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="829634df-b595-4b75-86ca-876068058662" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/lab7/second/main.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab7/second/test.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab7/second/user.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli/CHANGELOG.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli/analysis_options.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli/bin/cli.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli/lib/cli.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli/pubspec.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli/pubspec.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli/test/cli_test.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab8/app/javascript/app.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab8/app/javascript/packs/hello_vue.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab8/config/webpack/loaders/vue.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab8/yarn.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/labs2021.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/labs2021.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.reek.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.reek.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab5/first/main.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lab5/first/main.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lab5/second/main.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lab5/second/main.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab5/second/test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lab5/second/test.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab7/first/test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lab7/first/test.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab6/second/main.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lab6/second/main.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab6/third/main.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lab6/third/main.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab7/second/test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lab7/second/test.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Ruby File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/lab8" />
   </component>
   <component name="ProjectId" id="1zgns82vfLzIfKkqwT65ZbOLY8z" />
-  <component name="ProjectLevelVcsManager">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
@@ -29,12 +46,18 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/lab8" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.ruby.settings.RubyActiveModuleSdkConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="\\wsl$\Ubuntu\home\dima\labs2021\lab8\app\controllers" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="test" type="RubyRunConfigurationType" factoryName="Ruby" temporary="true">
@@ -56,6 +79,28 @@
       <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="" />
       <method v="2" />
     </configuration>
+    <configuration default="true" type="TestUnitRunConfigurationType" factoryName="Test::Unit/Shoulda/Minitest">
+      <predefined_log_file enabled="true" id="RUBY_TESTUNIT" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <EXTENSION ID="org.jetbrains.plugins.ruby.rails.run.RailsRunConfigurationExtension" SCRATCH_USE_RAILS_RUNNER="false" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPTS_PATHS" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_METHOD_NAME" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="CUSTOM_SET_OF_FILES" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="SPRING" VALUE="false" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_OPTIONS" VALUE="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Ruby.test" />
@@ -73,6 +118,9 @@
       <workItem from="1634578818907" duration="432000" />
       <workItem from="1634621935782" duration="11486000" />
       <workItem from="1634634540712" duration="1291000" />
+      <workItem from="1635614522892" duration="1667000" />
+      <workItem from="1635706126106" duration="8732000" />
+      <workItem from="1635862813938" duration="1302000" />
     </task>
     <servers />
   </component>
@@ -90,6 +138,9 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/labs2021@test.rcov" NAME="test Coverage Results" MODIFIED="1634579229005" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lab5/first" MODULE_NAME="labs2021" />

@@ -11,5 +11,6 @@ end
 def strings_sorter(count)
   (0..count - 1)
     .each_with_object([]) { |i, a| a << [*string_analyze((s = yield i)), s] }
-    .sort_by { |i| -i[0] }.map { |i| { str: i[2], data: i[1] } }
+    .sort_by { |i| -i[0] }
+    .map { |i| { str: i[2], data: i[1] } }
 end

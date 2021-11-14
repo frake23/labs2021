@@ -5,7 +5,36 @@
   </component>
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$" />
-    <orderEntry type="jdk" jdkName="ruby-2.7.2-p137" jdkType="RUBY_SDK" />
+    <orderEntry type="jdk" jdkName="Remote-rvm: ruby-3.0.0-p0" jdkType="RUBY_SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" scope="PROVIDED" name="actionpack (v6.1.4.1, Remote-rvm: ruby-3.0.0-p0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="actionview (v6.1.4.1, Remote-rvm: ruby-3.0.0-p0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="activesupport (v6.1.4.1, Remote-rvm: ruby-3.0.0-p0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="bootsnap (v1.9.1, Remote-rvm: ruby-3.0.0-p0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="builder (v3.2.4, Remote-rvm: ruby-3.0.0-p0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="bundler (v2.2.3, Remote-rvm: ruby-3.0.0-p0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="concurrent-ruby (v1.1.9, Remote-rvm: ruby-3.0.0-p0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="crass (v1.0.6, Remote-rvm: ruby-3.0.0-p0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="erubi (v1.10.0, Remote-rvm: ruby-3.0.0-p0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="i18n (v1.8.10, Remote-rvm: ruby-3.0.0-p0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="loofah (v2.12.0, Remote-rvm: ruby-3.0.0-p0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="method_source (v1.0.0, Remote-rvm: ruby-3.0.0-p0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="minitest (v5.14.4, Remote-rvm: ruby-3.0.0-p0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="msgpack (v1.4.2, Remote-rvm: ruby-3.0.0-p0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="nokogiri (v1.12.5, Remote-rvm: ruby-3.0.0-p0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="racc (v1.6.0, Remote-rvm: ruby-3.0.0-p0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rack (v2.2.3, Remote-rvm: ruby-3.0.0-p0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rack-proxy (v0.7.0, Remote-rvm: ruby-3.0.0-p0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rack-test (v1.1.0, Remote-rvm: ruby-3.0.0-p0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rails-dom-testing (v2.0.3, Remote-rvm: ruby-3.0.0-p0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rails-html-sanitizer (v1.4.2, Remote-rvm: ruby-3.0.0-p0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="railties (v6.1.4.1, Remote-rvm: ruby-3.0.0-p0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rake (v13.0.6, Remote-rvm: ruby-3.0.0-p0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rbs (v1.0.0, Remote-rvm: ruby-3.0.0-p0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="semantic_range (v3.0.0, Remote-rvm: ruby-3.0.0-p0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="thor (v1.1.0, Remote-rvm: ruby-3.0.0-p0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="tzinfo (v2.0.4, Remote-rvm: ruby-3.0.0-p0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="webpacker (v5.4.3, Remote-rvm: ruby-3.0.0-p0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="zeitwerk (v2.5.1, Remote-rvm: ruby-3.0.0-p0) [gem]" level="application" />
   </component>
 </module>

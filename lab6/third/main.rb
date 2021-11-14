@@ -1,8 +1,6 @@
 # frozen_string_literal: true
 
 def find_roots(left, right, func = nil, eps = 0.1, &block)
-  left = left.to_f
-  right = right.to_f
   return nil unless (fun = func || block)
 
   x_var = left
@@ -10,7 +8,7 @@ def find_roots(left, right, func = nil, eps = 0.1, &block)
   while x_var <= right
     x_var += eps
     y_var = fun.call x_var
-    y_var * y_of_a <= 0 ? (return x_var - eps / 2) : nil
+    y_var * y_of_a <= 0 ? (return x_var - eps / 2.0) : nil
   end
 end
 
